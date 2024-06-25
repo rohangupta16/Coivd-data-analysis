@@ -50,7 +50,7 @@ order by total_death_count desc
 
 --let's break things down by Continent
 
---showing Continents with the Highet Death Count per Population
+--showing Continents with the Highest Death Count per Population
 select continent, sum(cast(total_deaths as float)) as total_death_count
 from [Portfolio Project]..covid_deaths
 where continent is not null
